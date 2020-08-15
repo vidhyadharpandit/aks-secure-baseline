@@ -129,7 +129,7 @@
                 "[resourceId('Microsoft.Network/virtualNetworks', variables('clusterVNetName'))]"
             ],
             "properties": {
-                "workspaceId": "[resourceId(variables('hubRgName'), 'Microsoft.OperationalInsights/workspaces', concat('la-networking-hub-vid-', reference(parameters('hubVnetResourceId'), '2019-11-01', 'Full').location))]",
+                "workspaceId": "[resourceId(variables('hubRgName'), 'Microsoft.OperationalInsights/workspaces', concat('la-networking-hub-vp-', reference(parameters('hubVnetResourceId'), '2019-11-01', 'Full').location))]",
                 "metrics": [
                     {
                         "category": "AllMetrics",
